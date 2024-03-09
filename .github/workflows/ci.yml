@@ -37,7 +37,7 @@ jobs:
         id: meta
         uses: docker/metadata-action@v4
         with:
-          images: ogibayashi/minecraft-bedrock-server
+          images: ghcr.io/ogibayashi/minecraft-bedrock-server
           flavor: |
             latest=${{ github.event_name == 'push' && github.ref_name == 'master' }}
 
